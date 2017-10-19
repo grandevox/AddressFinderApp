@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Camera-->
+        <!--Camera View Controller-->
         <scene sceneID="nE7-cV-JeC">
             <objects>
                 <viewController id="iT1-8P-ZBO" customClass="CameraViewController" customModule="AddressFinder" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,38 +23,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U9E-jH-gTQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="467"/>
+                                <color key="backgroundColor" red="0.78766887977127542" green="0.87462135786632711" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-Tl-Daz">
-                                <rect key="frame" x="0.0" y="573" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="30"/>
                                 <state key="normal" title="Pick From Library"/>
                                 <connections>
                                     <action selector="accessLibrary:" destination="iT1-8P-ZBO" eventType="touchUpInside" id="srF-0a-6FT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68d-sl-wQp">
-                                <rect key="frame" x="0.0" y="533" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="546" width="375" height="30"/>
                                 <state key="normal" title="New Photo or Video"/>
                                 <connections>
                                     <action selector="createMedia:" destination="iT1-8P-ZBO" eventType="touchUpInside" id="61A-ZY-0Gs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPp-8m-9aO">
+                                <rect key="frame" x="-0.5" y="512" width="375" height="30"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <segue destination="1nZ-JR-KpC" kind="show" id="LCq-Kk-WvN"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="U9E-jH-gTQ" firstAttribute="width" secondItem="qYW-bz-18z" secondAttribute="width" id="4dS-c8-per"/>
+                            <constraint firstItem="rPp-8m-9aO" firstAttribute="centerX" secondItem="qYW-bz-18z" secondAttribute="centerX" id="BSx-zh-vvd"/>
                             <constraint firstItem="Tdb-Tl-Daz" firstAttribute="centerX" secondItem="qYW-bz-18z" secondAttribute="centerX" id="CId-ni-I80"/>
                             <constraint firstItem="Tdb-Tl-Daz" firstAttribute="width" secondItem="qYW-bz-18z" secondAttribute="width" id="CeF-gd-COC"/>
                             <constraint firstItem="68d-sl-wQp" firstAttribute="width" secondItem="qYW-bz-18z" secondAttribute="width" id="EUp-4y-HJS"/>
                             <constraint firstItem="U9E-jH-gTQ" firstAttribute="top" secondItem="c54-Lg-T5w" secondAttribute="bottom" constant="-20" id="GHF-zy-eCl"/>
-                            <constraint firstItem="U9E-jH-gTQ" firstAttribute="height" secondItem="qYW-bz-18z" secondAttribute="height" multiplier="0.75" id="ISf-el-2rx"/>
-                            <constraint firstItem="Fav-qB-FBg" firstAttribute="top" secondItem="Tdb-Tl-Daz" secondAttribute="bottom" constant="15" id="Q6k-t7-EPl"/>
+                            <constraint firstItem="U9E-jH-gTQ" firstAttribute="height" secondItem="qYW-bz-18z" secondAttribute="height" multiplier="0.7" id="ISf-el-2rx"/>
+                            <constraint firstItem="Fav-qB-FBg" firstAttribute="top" secondItem="Tdb-Tl-Daz" secondAttribute="bottom" constant="8" id="Q6k-t7-EPl"/>
+                            <constraint firstItem="rPp-8m-9aO" firstAttribute="width" secondItem="qYW-bz-18z" secondAttribute="width" id="UjJ-Cm-duG"/>
                             <constraint firstItem="68d-sl-wQp" firstAttribute="centerX" secondItem="qYW-bz-18z" secondAttribute="centerX" id="VW3-KP-3wK"/>
                             <constraint firstItem="U9E-jH-gTQ" firstAttribute="centerX" secondItem="qYW-bz-18z" secondAttribute="centerX" id="W5G-nl-EgS"/>
-                            <constraint firstItem="Tdb-Tl-Daz" firstAttribute="top" secondItem="68d-sl-wQp" secondAttribute="bottom" constant="10" id="Yjj-k3-ymr"/>
+                            <constraint firstItem="68d-sl-wQp" firstAttribute="top" secondItem="rPp-8m-9aO" secondAttribute="bottom" constant="4" id="WCF-Ni-bHz"/>
+                            <constraint firstItem="Tdb-Tl-Daz" firstAttribute="top" secondItem="68d-sl-wQp" secondAttribute="bottom" constant="4" id="Yjj-k3-ymr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" id="7Df-r0-0R0"/>
+                    <navigationItem key="navigationItem" id="gQd-t2-th9"/>
                     <connections>
                         <outlet property="imageView" destination="U9E-jH-gTQ" id="zWJ-qr-D7Q"/>
                         <outlet property="takePicture" destination="68d-sl-wQp" id="zjJ-c4-LCG"/>
@@ -62,7 +73,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYk-FV-4W8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="215"/>
+            <point key="canvasLocation" x="1672.8" y="214.54272863568218"/>
+        </scene>
+        <!--History Table View Controller-->
+        <scene sceneID="mvt-lF-sqf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kys-SD-URr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="1nZ-JR-KpC" customClass="HistoryTableViewController" customModule="AddressFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QsV-kF-gbW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ube-HZ-yfd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ube-HZ-yfd" id="92M-zD-1lV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1nZ-JR-KpC" id="GyI-wv-T1q"/>
+                            <outlet property="delegate" destination="1nZ-JR-KpC" id="jtR-VM-n2o"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2663.1999999999998" y="214.54272863568218"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VGd-Pg-tXR">
@@ -75,7 +114,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="yR7-tQ-tnM"/>
-                        <segue destination="iT1-8P-ZBO" kind="relationship" relationship="viewControllers" id="WfQ-AY-pLo"/>
+                        <segue destination="SA3-fP-ntF" kind="relationship" relationship="viewControllers" id="WfQ-AY-pLo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a19-XX-rKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,6 +203,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="734" y="-517"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="pgw-ZG-7v0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SA3-fP-ntF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Camera" id="7Df-r0-0R0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="35L-uY-844">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iT1-8P-ZBO" kind="relationship" relationship="rootViewController" id="Yr4-nG-AHD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2J3-Fl-94d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="214.54272863568218"/>
         </scene>
     </scenes>
 </document>

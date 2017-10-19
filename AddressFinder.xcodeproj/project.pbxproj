@@ -16,6 +16,9 @@
 		327D0F571F98B24A00591197 /* AddressFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F561F98B24A00591197 /* AddressFinderTests.swift */; };
 		327D0F621F98B24A00591197 /* AddressFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F611F98B24A00591197 /* AddressFinderUITests.swift */; };
 		327D0F711F98C1F600591197 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F701F98C1F600591197 /* CameraViewController.swift */; };
+		327D0F781F98D3B100591197 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F771F98D3B100591197 /* HistoryTableViewController.swift */; };
+		327D0F7F1F98D60200591197 /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F7D1F98D60200591197 /* Media+CoreDataClass.swift */; };
+		327D0F801F98D60200591197 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F7E1F98D60200591197 /* Media+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		327D0F611F98B24A00591197 /* AddressFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderUITests.swift; sourceTree = "<group>"; };
 		327D0F631F98B24A00591197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327D0F701F98C1F600591197 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		327D0F771F98D3B100591197 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		327D0F7D1F98D60200591197 /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataClass.swift"; sourceTree = "<group>"; };
+		327D0F7E1F98D60200591197 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		327D0F3D1F98B24A00591197 /* AddressFinder */ = {
 			isa = PBXGroup;
 			children = (
+				327D0F721F98D25700591197 /* Model */,
 				327D0F6F1F98BDC900591197 /* Controller */,
 				327D0F3E1F98B24A00591197 /* AppDelegate.swift */,
 				327D0F421F98B24A00591197 /* Main.storyboard */,
@@ -135,8 +142,18 @@
 			children = (
 				327D0F401F98B24A00591197 /* AddressFinderViewController.swift */,
 				327D0F701F98C1F600591197 /* CameraViewController.swift */,
+				327D0F771F98D3B100591197 /* HistoryTableViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		327D0F721F98D25700591197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327D0F7D1F98D60200591197 /* Media+CoreDataClass.swift */,
+				327D0F7E1F98D60200591197 /* Media+CoreDataProperties.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327D0F7F1F98D60200591197 /* Media+CoreDataClass.swift in Sources */,
 				327D0F471F98B24A00591197 /* AddressFinder.xcdatamodeld in Sources */,
 				327D0F711F98C1F600591197 /* CameraViewController.swift in Sources */,
 				327D0F411F98B24A00591197 /* AddressFinderViewController.swift in Sources */,
+				327D0F781F98D3B100591197 /* HistoryTableViewController.swift in Sources */,
 				327D0F3F1F98B24A00591197 /* AppDelegate.swift in Sources */,
+				327D0F801F98D60200591197 /* Media+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +543,7 @@
 				327D0F681F98B24A00591197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		327D0F691F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +552,7 @@
 				327D0F6B1F98B24A00591197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		327D0F6C1F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +561,7 @@
 				327D0F6E1F98B24A00591197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
