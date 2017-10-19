@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327D0F3F1F98B24A00591197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F3E1F98B24A00591197 /* AppDelegate.swift */; };
+		327D0F411F98B24A00591197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F401F98B24A00591197 /* ViewController.swift */; };
+		327D0F441F98B24A00591197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327D0F421F98B24A00591197 /* Main.storyboard */; };
+		327D0F471F98B24A00591197 /* AddressFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F451F98B24A00591197 /* AddressFinder.xcdatamodeld */; };
+		327D0F491F98B24A00591197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327D0F481F98B24A00591197 /* Assets.xcassets */; };
+		327D0F4C1F98B24A00591197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327D0F4A1F98B24A00591197 /* LaunchScreen.storyboard */; };
+		327D0F571F98B24A00591197 /* AddressFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F561F98B24A00591197 /* AddressFinderTests.swift */; };
+		327D0F621F98B24A00591197 /* AddressFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F611F98B24A00591197 /* AddressFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327D0F531F98B24A00591197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327D0F331F98B24A00591197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327D0F3A1F98B24A00591197;
+			remoteInfo = AddressFinder;
+		};
+		327D0F5E1F98B24A00591197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327D0F331F98B24A00591197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327D0F3A1F98B24A00591197;
+			remoteInfo = AddressFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		327D0F3B1F98B24A00591197 /* AddressFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327D0F3E1F98B24A00591197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		327D0F401F98B24A00591197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		327D0F431F98B24A00591197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		327D0F461F98B24A00591197 /* AddressFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddressFinder.xcdatamodel; sourceTree = "<group>"; };
+		327D0F481F98B24A00591197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327D0F4B1F98B24A00591197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		327D0F4D1F98B24A00591197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327D0F521F98B24A00591197 /* AddressFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327D0F561F98B24A00591197 /* AddressFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderTests.swift; sourceTree = "<group>"; };
+		327D0F581F98B24A00591197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327D0F5D1F98B24A00591197 /* AddressFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327D0F611F98B24A00591197 /* AddressFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderUITests.swift; sourceTree = "<group>"; };
+		327D0F631F98B24A00591197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327D0F381F98B24A00591197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D0F4F1F98B24A00591197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D0F5A1F98B24A00591197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327D0F321F98B24A00591197 = {
+			isa = PBXGroup;
+			children = (
+				327D0F3D1F98B24A00591197 /* AddressFinder */,
+				327D0F551F98B24A00591197 /* AddressFinderTests */,
+				327D0F601F98B24A00591197 /* AddressFinderUITests */,
+				327D0F3C1F98B24A00591197 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327D0F3C1F98B24A00591197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327D0F3B1F98B24A00591197 /* AddressFinder.app */,
+				327D0F521F98B24A00591197 /* AddressFinderTests.xctest */,
+				327D0F5D1F98B24A00591197 /* AddressFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327D0F3D1F98B24A00591197 /* AddressFinder */ = {
+			isa = PBXGroup;
+			children = (
+				327D0F3E1F98B24A00591197 /* AppDelegate.swift */,
+				327D0F401F98B24A00591197 /* ViewController.swift */,
+				327D0F421F98B24A00591197 /* Main.storyboard */,
+				327D0F481F98B24A00591197 /* Assets.xcassets */,
+				327D0F4A1F98B24A00591197 /* LaunchScreen.storyboard */,
+				327D0F4D1F98B24A00591197 /* Info.plist */,
+				327D0F451F98B24A00591197 /* AddressFinder.xcdatamodeld */,
+			);
+			path = AddressFinder;
+			sourceTree = "<group>";
+		};
+		327D0F551F98B24A00591197 /* AddressFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				327D0F561F98B24A00591197 /* AddressFinderTests.swift */,
+				327D0F581F98B24A00591197 /* Info.plist */,
+			);
+			path = AddressFinderTests;
+			sourceTree = "<group>";
+		};
+		327D0F601F98B24A00591197 /* AddressFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				327D0F611F98B24A00591197 /* AddressFinderUITests.swift */,
+				327D0F631F98B24A00591197 /* Info.plist */,
+			);
+			path = AddressFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327D0F3A1F98B24A00591197 /* AddressFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327D0F661F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinder" */;
+			buildPhases = (
+				327D0F371F98B24A00591197 /* Sources */,
+				327D0F381F98B24A00591197 /* Frameworks */,
+				327D0F391F98B24A00591197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddressFinder;
+			productName = AddressFinder;
+			productReference = 327D0F3B1F98B24A00591197 /* AddressFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327D0F511F98B24A00591197 /* AddressFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327D0F691F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinderTests" */;
+			buildPhases = (
+				327D0F4E1F98B24A00591197 /* Sources */,
+				327D0F4F1F98B24A00591197 /* Frameworks */,
+				327D0F501F98B24A00591197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327D0F541F98B24A00591197 /* PBXTargetDependency */,
+			);
+			name = AddressFinderTests;
+			productName = AddressFinderTests;
+			productReference = 327D0F521F98B24A00591197 /* AddressFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		327D0F5C1F98B24A00591197 /* AddressFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327D0F6C1F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinderUITests" */;
+			buildPhases = (
+				327D0F591F98B24A00591197 /* Sources */,
+				327D0F5A1F98B24A00591197 /* Frameworks */,
+				327D0F5B1F98B24A00591197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327D0F5F1F98B24A00591197 /* PBXTargetDependency */,
+			);
+			name = AddressFinderUITests;
+			productName = AddressFinderUITests;
+			productReference = 327D0F5D1F98B24A00591197 /* AddressFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327D0F331F98B24A00591197 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = grandevox;
+				TargetAttributes = {
+					327D0F3A1F98B24A00591197 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					327D0F511F98B24A00591197 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 327D0F3A1F98B24A00591197;
+					};
+					327D0F5C1F98B24A00591197 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 327D0F3A1F98B24A00591197;
+					};
+				};
+			};
+			buildConfigurationList = 327D0F361F98B24A00591197 /* Build configuration list for PBXProject "AddressFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327D0F321F98B24A00591197;
+			productRefGroup = 327D0F3C1F98B24A00591197 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327D0F3A1F98B24A00591197 /* AddressFinder */,
+				327D0F511F98B24A00591197 /* AddressFinderTests */,
+				327D0F5C1F98B24A00591197 /* AddressFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327D0F391F98B24A00591197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327D0F4C1F98B24A00591197 /* LaunchScreen.storyboard in Resources */,
+				327D0F491F98B24A00591197 /* Assets.xcassets in Resources */,
+				327D0F441F98B24A00591197 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D0F501F98B24A00591197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D0F5B1F98B24A00591197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327D0F371F98B24A00591197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327D0F471F98B24A00591197 /* AddressFinder.xcdatamodeld in Sources */,
+				327D0F411F98B24A00591197 /* ViewController.swift in Sources */,
+				327D0F3F1F98B24A00591197 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D0F4E1F98B24A00591197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327D0F571F98B24A00591197 /* AddressFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327D0F591F98B24A00591197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327D0F621F98B24A00591197 /* AddressFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327D0F541F98B24A00591197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327D0F3A1F98B24A00591197 /* AddressFinder */;
+			targetProxy = 327D0F531F98B24A00591197 /* PBXContainerItemProxy */;
+		};
+		327D0F5F1F98B24A00591197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327D0F3A1F98B24A00591197 /* AddressFinder */;
+			targetProxy = 327D0F5E1F98B24A00591197 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		327D0F421F98B24A00591197 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327D0F431F98B24A00591197 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		327D0F4A1F98B24A00591197 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327D0F4B1F98B24A00591197 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327D0F641F98B24A00591197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		327D0F651F98B24A00591197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		327D0F671F98B24A00591197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AddressFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = grandevox.AddressFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		327D0F681F98B24A00591197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AddressFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = grandevox.AddressFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		327D0F6A1F98B24A00591197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AddressFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = grandevox.AddressFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressFinder.app/AddressFinder";
+			};
+			name = Debug;
+		};
+		327D0F6B1F98B24A00591197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AddressFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = grandevox.AddressFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressFinder.app/AddressFinder";
+			};
+			name = Release;
+		};
+		327D0F6D1F98B24A00591197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AddressFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = grandevox.AddressFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AddressFinder;
+			};
+			name = Debug;
+		};
+		327D0F6E1F98B24A00591197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AddressFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = grandevox.AddressFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AddressFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327D0F361F98B24A00591197 /* Build configuration list for PBXProject "AddressFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327D0F641F98B24A00591197 /* Debug */,
+				327D0F651F98B24A00591197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327D0F661F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327D0F671F98B24A00591197 /* Debug */,
+				327D0F681F98B24A00591197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327D0F691F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327D0F6A1F98B24A00591197 /* Debug */,
+				327D0F6B1F98B24A00591197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327D0F6C1F98B24A00591197 /* Build configuration list for PBXNativeTarget "AddressFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327D0F6D1F98B24A00591197 /* Debug */,
+				327D0F6E1F98B24A00591197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		327D0F451F98B24A00591197 /* AddressFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				327D0F461F98B24A00591197 /* AddressFinder.xcdatamodel */,
+			);
+			currentVersion = 327D0F461F98B24A00591197 /* AddressFinder.xcdatamodel */;
+			path = AddressFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 327D0F331F98B24A00591197 /* Project object */;
+}
