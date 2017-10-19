@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		327D0F3F1F98B24A00591197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F3E1F98B24A00591197 /* AppDelegate.swift */; };
-		327D0F411F98B24A00591197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F401F98B24A00591197 /* ViewController.swift */; };
+		327D0F411F98B24A00591197 /* AddressFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F401F98B24A00591197 /* AddressFinderViewController.swift */; };
 		327D0F441F98B24A00591197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327D0F421F98B24A00591197 /* Main.storyboard */; };
 		327D0F471F98B24A00591197 /* AddressFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F451F98B24A00591197 /* AddressFinder.xcdatamodeld */; };
 		327D0F491F98B24A00591197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327D0F481F98B24A00591197 /* Assets.xcassets */; };
 		327D0F4C1F98B24A00591197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327D0F4A1F98B24A00591197 /* LaunchScreen.storyboard */; };
 		327D0F571F98B24A00591197 /* AddressFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F561F98B24A00591197 /* AddressFinderTests.swift */; };
 		327D0F621F98B24A00591197 /* AddressFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F611F98B24A00591197 /* AddressFinderUITests.swift */; };
+		327D0F711F98C1F600591197 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D0F701F98C1F600591197 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		327D0F3B1F98B24A00591197 /* AddressFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327D0F3E1F98B24A00591197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		327D0F401F98B24A00591197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		327D0F401F98B24A00591197 /* AddressFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderViewController.swift; sourceTree = "<group>"; };
 		327D0F431F98B24A00591197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		327D0F461F98B24A00591197 /* AddressFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddressFinder.xcdatamodel; sourceTree = "<group>"; };
 		327D0F481F98B24A00591197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		327D0F5D1F98B24A00591197 /* AddressFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327D0F611F98B24A00591197 /* AddressFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderUITests.swift; sourceTree = "<group>"; };
 		327D0F631F98B24A00591197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327D0F701F98C1F600591197 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,8 @@
 		327D0F3D1F98B24A00591197 /* AddressFinder */ = {
 			isa = PBXGroup;
 			children = (
+				327D0F6F1F98BDC900591197 /* Controller */,
 				327D0F3E1F98B24A00591197 /* AppDelegate.swift */,
-				327D0F401F98B24A00591197 /* ViewController.swift */,
 				327D0F421F98B24A00591197 /* Main.storyboard */,
 				327D0F481F98B24A00591197 /* Assets.xcassets */,
 				327D0F4A1F98B24A00591197 /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				327D0F631F98B24A00591197 /* Info.plist */,
 			);
 			path = AddressFinderUITests;
+			sourceTree = "<group>";
+		};
+		327D0F6F1F98BDC900591197 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				327D0F401F98B24A00591197 /* AddressFinderViewController.swift */,
+				327D0F701F98C1F600591197 /* CameraViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				327D0F471F98B24A00591197 /* AddressFinder.xcdatamodeld in Sources */,
-				327D0F411F98B24A00591197 /* ViewController.swift in Sources */,
+				327D0F711F98C1F600591197 /* CameraViewController.swift in Sources */,
+				327D0F411F98B24A00591197 /* AddressFinderViewController.swift in Sources */,
 				327D0F3F1F98B24A00591197 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
