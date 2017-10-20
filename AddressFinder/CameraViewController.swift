@@ -13,21 +13,6 @@ import MobileCoreServices
 import CoreData
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    private init() {
-        managedContext = appDelegate.persistentContainer.viewContext
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // Get a reference to your App Delegate
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    // Hold a reference to the managed context
-    let managedContext: NSManagedObjectContext
-    
     @IBOutlet weak var takePicture: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
@@ -91,16 +76,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // Set the variable to the data retrieved
         if let mediaType = lastChosenMediaType {
-            let entity = NSEntityDescription.entity(forEntityName: "Media", in: managedContext)!
-            let media = Media(entity: entity, insertInto: managedContext)
-            
             if mediaType == (kUTTypeImage as NSString) as String {
                 image = info[UIImagePickerControllerEditedImage] as? UIImage
+                Model.sharedInstance.saveToHistory(media_Type: mediaType as NSObject, media_Name: image!)
             } else if mediaType == (kUTTypeMovie as NSString) as String {
                 movieURL = info[UIImagePickerControllerMediaURL] as? URL
+                Model.sharedInstance.saveToHistory(media_Type: mediaType as NSObject, media_Name: movieURL! as NSObject)
             }
-            
-            media.setValue(mediaType, forKey: "mediaType")
         }
         // Dismiss the picker to return to the apps view
         picker.dismiss(animated: true, completion: nil)
